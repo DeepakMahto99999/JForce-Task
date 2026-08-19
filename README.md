@@ -15,4 +15,18 @@
 
 1. Created `config/db.js` and used Mongoose to connect the application to MongoDB Atlas.
 
-2. Stored the MongoDB connection string in the .env file as MONGO_URI instead of writing it directly in the code, which helps keep sensitive database credentials secure.
+2. Stored the MongoDB connection string in the .env file as MONGO_URI instead of writing it directly in the code, which helps keep sensitive database credentials secure. 
+
+
+## userModel 
+
+1. `models/user.model.js` 
+- Created User schema using Mongoose.
+- Added email validation using Regex.
+- Password is hashed using `bcryptjs` before saving.
+- Used `select: false` to hide password from query results.
+- Created `comparePassword()` method to verify user passwords.
+- Used `pre("save")` middleware to hash passwords automatically.
+
+2. `models/expense.model.js`
+- Created expense Schema this seperate model for tracking user expense .
