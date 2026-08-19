@@ -56,4 +56,13 @@ make register , logout and login api
 ## create expenses api 
 POST | `api/expenses/create 
 
-create api of expenses data save in db 
+create api of expenses data save in db  
+
+
+## get one expenses by id and all expenses 
+
+POST | `api/expenses/create/6a8572a63e9db34256743b81 `
+
+POST | `api/expenses/create `
+
+fetch from database 
