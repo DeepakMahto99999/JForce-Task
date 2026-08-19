@@ -1,6 +1,7 @@
 import express from 'express'
 import cookieParser from 'cookie-parser'
 import authRouter from './routes/auth.routes.js';
+import expenseRouter from './routes/expense.routes.js';
 const app = express();
 
 
@@ -12,6 +13,8 @@ app.get("/", async (req, res) => {
 })
 
 app.use("/api/auth", authRouter);
+
+app.use("/api/expenses", expenseRouter);
 
 
 

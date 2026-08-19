@@ -50,4 +50,10 @@ make register , logout and login api
 ##  `src/middleware`
 - Protects routes using JWT authentication.
 - Allows access only to authenticated users.
-- Verifies the JWT token and attaches the authenticated user to `req.user`.
+- Verifies the JWT token and attaches the authenticated user to `req.user`. 
+
+
+## create expenses api 
+POST | `api/expenses/create 
+
+create api of expenses data save in db 
