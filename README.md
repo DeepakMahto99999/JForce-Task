@@ -30,3 +30,15 @@
 
 2. `models/expense.model.js`
 - Created expense Schema this seperate model for tracking user expense .
+
+
+
+## implement register , logout and login api 
+make register , logout and login api 
+### Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/auth/register` | Register a new user |
+| POST | `/api/auth/login` | Login an existing user |
+| post | `/api/auth/logout` | Logout an existing user | 
